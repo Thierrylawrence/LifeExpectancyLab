@@ -1,0 +1,70 @@
+body{
+  background-color: lightblue;
+}
+
+svg{
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+line{
+
+ stroke:black;
+ stroke-width: 3
+
+
+
+}
+
+.data{
+
+  stroke:black;
+  stroke-width:3
+}
+
+.turn{
+
+
+  transform:rotate(-90deg);
+
+  font-weight:bold
+
+
+
+}
+
+.tick{
+
+
+  stroke:black;
+  stroke-width:4
+}
+
+
+.Canada{
+
+
+  fill:cyan;
+  stroke-width: 3
+}
+
+
+.US{
+
+
+  fill:blue;
+  stroke-width: 3
+
+}
+
+
+.Mexico{
+
+
+  fill:darkblue;
+  stroke-width: 3
+
+
+
+}
