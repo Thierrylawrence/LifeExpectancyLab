@@ -12,6 +12,81 @@
     {% include 'north_america.svg' %}
   </div>
 
+
+
+
+
+
+ 
+
+  {%if data["Canada"][year] < 65%}
+
+
+  The average life expectancy in Canada in {{year}} was under 65.
+ 
+
+
+{%endif%}
+
+
+{%if data["Canada"][year] > 65 and data["Canada"][year] < 75%}
+
+The average life expectancy in Canada in {{year}} was in between 65 and 75.
+
+
+
+{%endif%}
+
+
+{%if data["Canada"][year] > 75 %}
+
+The average life expectancy in Canada in {{year}} was over 75.
+
+{%endif%}
+
+
+{%if data["US"][year] < 65%}
+
+The average life expectancy in the US in {{year}} was under 65.
+
+{%endif%}
+
+
+{%if data["US"][year] > 65 and data["US"][year] < 75%}
+
+
+The average life expectancy in the US in {{year}} was in between 65 and 75.
+
+{%endif%}
+
+
+{%if data["US"][year] > 75%}
+
+The average life expectancy in the US in {{year}} was over 75.
+
+{%endif%}
+
+
+{%if data["Mexico"][year] < 65%}
+
+The average life expectancy in Mexico in {{year}} was under 65.
+
+{%endif%}
+
+
+{%if data["Mexico"][year] > 65 and data["Mexico"][year] < 75%}
+
+The average life expectancy in Mexico in {{year}} was in between 65 and 75.
+
+{%endif%}
+
+
+{%if data["Mexico"][year] > 75%}
+
+The average life expectancy in Mexico in {{year}} was over 75.
+
+{%endif%}
+
   <footer>
     All data from <a href="https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=MX-US-CA"> The World Bank</a>.
   </footer>

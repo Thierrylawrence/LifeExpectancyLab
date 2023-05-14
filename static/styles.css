@@ -16,7 +16,13 @@ line{
 
 
 }
+.average:hover{
 
+stroke:red
+
+
+
+}
 .data{
 
   stroke:black;
@@ -66,5 +72,24 @@ line{
   stroke-width: 3
 
 
+
+}
+
+.darkblue{
+
+  color:darkblue
+
+}
+
+.cyan{
+
+
+  color:cyan
+}
+
+.blue{
+
+
+color:blue
 
 }

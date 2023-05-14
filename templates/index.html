@@ -17,7 +17,7 @@
       <label for="year">Choose a year and see the Map:</label><br>
       <select name="year" id="year_select">
         {%for i in range(1960,2021)%}
-        <option value={{i}} {% if selected_option == i %} selected {% endif %}>{{i}}</option>
+        <option value="{{i}}">{{i}}</option>
         {%endfor%}
 
       </select>
@@ -25,6 +25,34 @@
       <input type="submit" value="Submit">
     <form>
   </div>
+
+
+
+
+  <script>
+
+
+    function getYear() {
+
+    let year = document.getElementById("year_select").value;
+
+    console.log(year)
+
+    return year
+
+    
+
+  
+
+    }
+
+
+
+  </script>
+
+
+
+
 
 
 
