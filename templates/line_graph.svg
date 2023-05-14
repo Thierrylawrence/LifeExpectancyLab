@@ -33,10 +33,21 @@
           {%endfor%}
      {%endfor%}
 
-     {%set average = total/180%}
+     {%set average = 74.51195365850002%}
 
-     <line class= "average" x1 ="80" y1 = {{100-(total/180)/4}} x2 = "450" y2 = {{100-(total/180)/4}} />
-     <text class = "label" x = 475 y = {{95-(total/180)/4}} text-anchor="middle"> Universal Mean</text>
+     <line class= "average" x1 ="80" y1 = {{410-4*(average)}} x2 = "450" y2 = {{410-4*((average))}} />
+     <text class = "label" x = 475 y = {{410-4*((average))}} text-anchor="middle"> Universal Mean</text>
+
+
+
+
+     <line class = "data" x1 = "80" y1 = {{410- 4*(data["Mexico"][year])}} x2 = "430" y2 = {{410- 4*(data["Mexico"][year])}}>
+     <text class = "label" x = 450 y = {{410- 4*(data["Mexico"][year])}} text-anchor="middle">Mexico</text>
+
+
+
+     <text class = "label" x = 450 y = {{410- 4*(data["Canada"][year])}} text-anchor="middle">Canada</text>
+     <text class = "label" x = 450 y = {{410- 4*(data["US"][year])}} text-anchor="middle">US</text>
 
 
 

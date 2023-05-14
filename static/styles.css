@@ -13,8 +13,6 @@ line{
  stroke:black;
  stroke-width: 3
 
-
-
 }
 .average:hover{
 
@@ -23,9 +21,9 @@ stroke:red
 
 
 }
-.data{
+.data:hover{
 
-  stroke:black;
+  stroke:red;
   stroke-width:3
 }
 

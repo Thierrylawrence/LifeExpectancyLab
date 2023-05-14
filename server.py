@@ -13,12 +13,14 @@ def index():
     data = json.load(f)
     f.close()
 
-    requested_year = request.args.get('year1')
 
 
+    requested_year = request.args.get('year')
 
+    print(requested_year)
 
-
+    if requested_year == None:
+        requested_year = "1960"
 
     return render_template('index.html', data = data, year = requested_year)
 
