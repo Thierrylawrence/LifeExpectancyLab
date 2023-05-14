@@ -14,7 +14,7 @@
 
   <div>
     <form action="/" method="GET">
-      <label for="year">Choose a year and see the Map:</label><br>
+      <label for="year">Choose a year and see the Line Graph:</label><br>
       <select name="year" id="year_select">
         {%for i in range(1960,2021)%}
         <option value="{{i}}">{{i}}</option>
@@ -23,7 +23,22 @@
       </select>
 
       <input type="submit" value="Submit">
-    <form>
+    </form>
+  </div>
+
+
+  <div>
+    <form action="/year" method="GET">
+      <label for="year">Choose a year and see the Map</label><br>
+      <select name="year" id="year_select">
+        {%for i in range(1960,2021)%}
+        <option value="{{i}}">{{i}}</option>
+        {%endfor%}
+
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
   </div>
 
 
